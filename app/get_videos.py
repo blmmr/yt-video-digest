@@ -1,9 +1,9 @@
-from datetime import datetime, timedelta
-import googleapiclient.discovery
+from datetime import datetime, timedelta, timezone
+
 
 def get_monday():
-    today = datetime.utcnow()
-    monday = today - timedelta(days=today.weekday())  # Monday 00:00 UTC this week
+    today = datetime.now(timezone.utc)
+    monday = today - timedelta(days=today.weekday())
     return monday
 
 def get_videos(youtube, channel_id):
