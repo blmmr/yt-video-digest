@@ -1,0 +1,24 @@
+# Environments
+**/venv/
+**/env/
+**/.venv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyc
+
+# OS
+.DS_Store
+
+# Terraform for local testing
+# ignores anything with "terraform"
+*terraform*
+
+# Secrets
+*env
+*client_secret*
+
+# Dev files
+*sample*
+
